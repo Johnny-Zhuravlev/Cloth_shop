@@ -1,0 +1,42 @@
+@import '../css/header.css';
+@import '../css/popup.css';
+@import '../css/intro.css';
+@import '../css/catalog.css';
+@import '../css/avone.css';
+@import '../css/banner.css';
+@import '../css/footer.css';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;;
+    color: #22262a;
+}
+h2,
+h3,
+h4 {
+    font-weight: 400;
+}
+
+li {
+    line-height: 20px;
+}

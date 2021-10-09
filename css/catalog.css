@@ -1,0 +1,238 @@
+.catalog {
+    padding-top: 150px;
+}
+.women {
+    margin-bottom: 100px;
+}
+.women__title,
+.men__title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+}
+.women__subtitle,
+.men__subtitle {
+    margin-bottom: 65px;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+}
+.catalog-inner {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.catalog__card {
+    width: 24%;
+    margin-right: 25px;
+    text-decoration: none;
+}
+.catalog__card:last-child {
+    margin-right: 0;
+}
+.catalog__card:hover .catalog__card--img {
+    filter: brightness(1);
+}
+.catalog__card--img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+    filter: brightness(0.75);
+    transition: all .25s linear;
+}
+.collection,
+.catalog__card--title,
+.price {
+    font-size: 15px;
+    line-height: 24px;
+    color: #22262A;
+}
+.collection {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.catalog__card--title {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.ex-price {
+    margin-right: 45px;
+    text-decoration: line-through;
+}
+.actual-price {
+    color: #d54444;
+}
+
+
+
+
+/* Media Queries */
+@media (min-width: 1530px) {
+    .catalog {
+        margin-bottom: 135px;
+    }
+}
+
+
+
+@media (min-width: 1680px) {
+    .catalog {
+        margin-bottom: 150px;
+    }
+    .women__title,
+    .men__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .women__subtitle,
+    .men__subtitle {
+        margin-bottom: 75px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .collection,
+    .catalog__card--title,
+    .price {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+
+
+@media (min-width: 1920px) {
+    .catalog {
+        margin-bottom: 175px;
+    }
+    .women__title,
+    .men__title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .women__subtitle,
+    .men__subtitle {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .catalog-inner {
+        width: 85%;
+    }
+    .catalog__card {
+        margin-right: 35px;
+    }
+    .collection,
+    .catalog__card--title,
+    .price {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .catalog {
+        padding-top: 125px;
+    }
+    .women {
+        margin-bottom: 85px;
+    }
+    .catalog-inner {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .catalog__card {
+        width: 47%;
+        margin: 0 0 50px;
+    }
+    .catalog__card:nth-child(3),
+    .catalog__card:last-child {
+        margin-bottom: 0;
+    }
+    .catalog__card--img {
+        margin-bottom: 25px;
+        filter: brightness(1);
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .catalog {
+        padding-top: 100px;
+    }
+    .women__title,
+    .men__title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .women__subtitle,
+    .men__subtitle {
+        margin-bottom: 50px;
+    }
+    .catalog__card:nth-child(3),
+    .catalog__card:last-child {
+        display: none;
+    }
+    .catalog__card--img {
+        margin-bottom: 25px;
+    }
+}
+
+
+
+@media (max-width: 568px) {
+    .women__title,
+    .men__title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .women__title,
+    .men__title {
+        margin-bottom: 10px;
+    }
+    .women__subtitle,
+    .men__subtitle {
+        margin-bottom: 35px;
+    }
+    .catalog__card {
+        width: 100%;
+
+        text-align: center;
+    }
+    .catalog__card:nth-child(2) {
+        margin-bottom: 0;
+    }
+    .catalog__card--img {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media (max-width: 414px) {
+    .catalog {
+        padding-top: 80px;
+    }
+    .catalog-inner {
+        width: 100%;
+    }
+    .women {
+        margin-bottom: 60px;
+    }
+    .women__title,
+    .men__title {
+        margin-bottom: 5px;
+    }
+    .women__subtitle,
+    .men__subtitle {
+        margin-bottom: 25px;
+
+        font-size: 13px;
+    }
+    .catalog__card--img {
+        margin-bottom: 10px;
+    }
+}

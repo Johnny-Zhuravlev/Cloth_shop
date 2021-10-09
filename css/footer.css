@@ -1,0 +1,670 @@
+.footer {
+    padding-top: 115px;
+    background: #F2F8FC;
+}
+.footer-inner {
+    width: 80%;
+    margin: 0 auto 105px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__column.column1 {
+    width: 37%;
+}
+.footer__logo {
+    margin-bottom: 15px;
+    font-size: 25px;
+    line-height: 37px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.footer__text {
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 22px;
+}
+.location__link {
+    width: fit-content;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #22262a;
+    text-decoration: none;
+    background:  url(../img/footer/location.svg) 0 0 no-repeat;
+    transition: all .25s linear;
+}
+.location__link:hover,
+.email:hover,
+.phone:hover {
+    transform: scale(1.05);
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+.email {
+    width: fit-content;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #22262a;
+    text-decoration: none;
+    transition: all .25s linear;
+}
+.phone {
+    width: fit-content;
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #22262a;
+    text-decoration: none;
+    transition: all .25s linear;
+}
+.socials {
+    display: flex;
+    justify-content: start;
+}
+.socials__link {
+    margin-right: 10px;
+    transition: all .25s linear;
+}
+.socials__link img {
+    width: 30px;
+    height: 30px;
+}
+.socials__link:hover {
+    transform: rotate(360deg);
+}
+.footer__column.column2 {
+    width: 50.5%;
+}
+.footer__form {
+    width: 92%;
+    position: relative;
+    margin-bottom: 70px;
+}
+.form__title {
+    margin-bottom: 25px;
+    font-size: 25px;
+    line-height: 37px;
+    font-weight: 900;
+}
+.form__input {
+    width: 100%;
+    padding: 10px 60px 10px 25px;
+    font-size: 15px;
+    line-height: 22px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+    transition: all .25s linear;
+}
+.form__input:focus {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.form__btn {
+    padding: 9px 10px;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: Poppins;
+    font-weight: 600;
+    position: absolute;
+    top: 62px;
+    right: 0px;
+    cursor: pointer;
+
+    background: none;
+    outline: none;
+    border: none;
+}
+.footer__links--wrapper {
+    display: flex;
+}
+.accordion {
+    display: none;
+}
+.shop {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+.help {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 65px;
+}
+.about {
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+}
+.shop__title,
+.help__title,
+.about__title {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Poppins';
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.shop__link,
+.help__link,
+.about__link {
+    width: fit-content;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #22262a;
+    cursor: pointer;
+    position: relative;
+}
+.shop__link:last-child,
+.help__link:last-child,
+.about__link:last-child {
+    margin-bottom: 0;
+}
+.shop__link::after,
+.help__link::after,
+.about__link::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: #22262a;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transition: all .3s linear;
+}
+.shop__link:hover::after,
+.help__link:hover::after,
+.about__link:hover::after {
+    width: 100%;
+}
+.footer__copyright {
+    padding: 35px 0;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    background: #e7f5f8;
+}
+
+
+
+
+/* Media Queries */
+@media (min-width: 1530px) {
+    .footer__text,
+    .location__link,
+    .email,
+    .phone,
+    .shop__link,
+    .help__link,
+    .about__link {
+        font-size: 16px;
+    }
+    .form__input {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .form__btn {
+        font-size: 16px;
+        line-height: 24px;
+        top: 66px;
+    }
+}
+
+
+
+@media (min-width: 1680px) {
+    .footer-inner {
+        width: 75%;
+    }
+    .footer__logo {
+        margin-bottom: 20px;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .footer__text,
+    .location__link,
+    .email,
+    .phone,
+    .shop__link,
+    .help__link,
+    .about__link {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .socials__link img {
+        width: 30px;
+        height: 30px;
+    }
+    .form__title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .footer__form {
+        width: 100%;
+    }
+    .form__input {
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+        font-size: 17px;
+    }
+    .form__btn {
+        padding: 12px 12.5px;
+        font-size: 17px;
+        top: 65px;
+    }
+    .footer__links--wrapper {
+        justify-content: space-between;
+    }
+    .shop__title,
+    .help__title,
+    .about__title {
+        font-size: 22px;
+    }
+    .shop,
+    .help {
+        margin-right: 0;
+    }
+    .footer__copyright {
+        font-size: 16px;
+    }
+}
+
+
+
+@media (min-width: 1920px) {
+    .footer__logo {
+        margin-bottom: 25px;
+        font-size: 32px;
+        line-height: 46px;
+    }
+    .footer__text,
+    .location__link,
+    .email,
+    .phone,
+    .shop__link,
+    .help__link,
+    .about__link {
+        font-size: 18px;
+    }
+    .form__title {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+    .form__input {
+        font-size: 18px;
+    }
+    .form__btn {
+        font-size: 18px;
+        top: 71px;
+    }
+    .shop__title,
+    .help__title,
+    .about__title {
+        font-size: 22px;
+    }
+    .footer__copyright {
+        font-size: 17px;
+    }
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .footer {
+        padding-top: 100px;
+    }
+    .footer-inner {
+        width: 90%;
+        margin-bottom: 70px;
+    }
+    .footer__logo,
+    .form__title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .footer__form {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .footer__links--wrapper {
+        justify-content: space-between;
+    }
+    .shop,
+    .help {
+        margin-right: 0;
+    }
+    .shop__title,
+    .help__title,
+    .about__title {
+        margin-bottom: 20px;
+    }
+    .shop__link,
+    .help__link,
+    .about__link {
+        margin-bottom: 15px;
+    }
+    .footer__copyright {
+        padding: 25px 0;
+    }
+}
+
+
+
+@media (max-width: 1130px) {
+    .footer {
+        padding-top: 70px;
+    }
+    .footer-inner {
+        width: 90%;
+        margin-bottom: 70px;
+    }
+    .footer__column.column1 {
+        width: 30%;
+    }
+    .footer__text {
+        margin-bottom: 30px;
+    }
+    .footer__logo,
+    .form__title {
+        margin-bottom: 20px;
+    }
+    .location__link {
+        margin-bottom: 10px;
+    }
+    .footer__column.column2 {
+        width: 55.5%;
+    }
+    .footer__form {
+        width: 100%;
+    }
+    .form__btn {
+        top: 56px;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .footer {
+        padding-top: 90px;
+    }
+    .footer-inner {
+        width: 90%;
+        margin-bottom: 60px;
+    }
+    .footer__logo,
+    .form__title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .footer__text {
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .location__link {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .email,
+    .phone {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .footer__form {
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    .form__input {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .form__btn {
+        font-size: 14px;
+        line-height: 21px;
+        top: 53px;
+    }
+    .shop,
+    .about {
+        width: 25%;
+    }
+    .help {
+        width: 40%;
+    }
+    .shop__title,
+    .help__title,
+    .about__title {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    .shop__link,
+    .help__link,
+    .about__link {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+
+
+@media (max-width:850px) {
+    .footer-inner {
+        justify-content: flex-start;
+    }
+    .footer__column.column1 {
+        width: 35%;
+        margin-right: 65px;
+    }
+    .help {
+        width: 45%;
+    }
+    .footer__column.column2 {
+        width: 65%;
+    }
+    .footer__links--wrapper {
+        justify-content: unset;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    .footer__column.column1 {
+        width: 100%;
+        margin-right: 0;
+        order: 2;
+
+        position: relative;
+    }
+    .footer__logo {
+        margin: 0;
+        line-height: 22px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .footer__text {
+        display: none;
+    }
+    .footer__column.column2 {
+        width: 100%;
+    }
+    .footer__form {
+        width: 60%;
+        margin: 0 auto 40px;
+    }
+    .form__title {
+        text-align: center;
+    }
+    .form__input {
+        padding: 10px 55px 10px 15px;
+    }
+    .footer__links--wrapper {
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    .shop,
+    .about {
+        width: 30%;
+    }
+    .help {
+        width: 40%;
+    }
+    .shop__title,
+    .help__title,
+    .about__title {
+        text-align: center;
+    }
+    .shop__link,
+    .help__link,
+    .about__link {
+        margin: 0 auto 7.5px;
+    }
+    .footer__copyright {
+        padding: 20px 0;
+    }
+}
+
+
+
+@media (max-width: 568px) {
+    .footer {
+        padding-top: 45px;
+    }
+    .footer-inner {
+        margin-bottom: 30px;
+    }
+    .footer__form {
+        width: 65%;
+    }
+    .shop,
+    .about {
+        width: 25%;
+    }
+    .shop__title,
+    .help__title,
+    .about__title {
+        line-height: 24px;
+    }
+}
+
+
+
+@media (max-width: 450px) {
+    .footer__form {
+        width: 75%;
+        margin-bottom: 30px;
+    }
+    .footer__links--wrapper {
+        display: none;
+    }
+    ul.accordion {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin-bottom: 30px;
+    }
+    .accordion__shop,
+    .accordion__help,
+    .accordion__about {
+        width: 100%;
+        margin-bottom: 0;
+        position: relative;
+    }
+    .accordion__title {
+        width: 100%;
+        margin-bottom: 7.5px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+    }
+    .title__plus {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        right: 33%;
+        transition: all .25s linear;
+    }
+    .title__plus.rotate {
+        transform: rotate(45deg);
+    }
+    .title__plus::before {
+        content: '\002B';
+        width: 100%;
+        height: 100%;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .links__wrapper {
+        display: none;
+        margin-bottom: 10px;
+    }
+    .shop__link,
+    .help__link,
+    .about__link {
+        display: block;
+    }
+    .shop__link::after,
+    .help__link::after,
+    .about__link::after {
+        height: 0;
+    }
+    .footer__copyright {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+    .footer__form {
+        width: 90%;
+    }
+    .accordion__title {
+        font-size: 18px;
+    }
+    .footer__copyright {
+        padding: 15px 0px;
+        font-size: 10px;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .footer-inner {
+        margin-bottom: 20px;
+    }
+    .footer__logo,
+    .form__title {
+        font-size: 20px;
+    }
+    .accordion__title {
+        font-size: 18px;
+    }
+    .title__plus {
+        right: 30%;
+    }
+}

@@ -1,0 +1,238 @@
+.avone {
+    padding-top: 150px;
+    margin-bottom: 120px;
+}
+.avone__title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.avone__subtitle {
+    margin-bottom: 145px;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+}
+.avone-inner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    position: relative;
+}
+.avone-inner__img {
+    width: 47.917%;
+}
+.avone-inner__img:nth-child(2) {
+    width: 44.619%;
+    height: fit-content;
+    margin-top: -85px;
+    position: relative;
+}
+.avone-inner__img:nth-child(3) {
+    width: 21.875%;
+    position: absolute;
+    top: 49.65%;
+    right: 0%;
+
+    border-top: 22px solid #fff;
+    border-left: 25px solid #fff;
+}
+.avone__link {
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #22262a;
+
+    position: absolute;
+    top: 89%;
+    right: 23%;
+
+    transition: all .25s linear;
+}
+.avone__link::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: #22262a;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transition: all .3s linear;
+}
+.avone__link:hover::after {
+    width: 100%;
+}
+
+
+
+
+/* Media Queries */
+@media (min-width: 1680px) {
+    .avone__title {
+        font-size: 30px;
+    }
+    .avone__subtitle {
+        margin-bottom: 160px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .avone__link {
+        font-size: 16px;
+    }
+}
+
+
+
+@media (min-width: 1680px) {
+    .avone__title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .avone__subtitle {
+        margin-bottom: 175px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .avone__link {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+
+
+@media (max-width: 1280px) {
+    .avone {
+        padding-top: 115px;
+        margin-bottom: 70px;
+    }
+    .avone-inner__img:nth-child(2) {
+        margin-top: -70px;
+    }
+    .avone-inner__img:nth-child(3) {
+        top: 50%;
+        right: -1%;
+    }
+    .avone__link {
+        top: 85%;
+        right: 22%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .avone {
+        padding-top: 100px;
+        margin-bottom: 60px;
+    }
+    .avone__subtitle {
+        margin-bottom: 100px;
+
+        line-height: 18px;
+    }
+    .avone-inner {
+        width: 95%;
+    }
+    .avone-inner__img:nth-child(2) {
+        margin-top: -55px;
+    }
+    .avone-inner__img:nth-child(3) {
+        border-top: 15px solid #fff;
+        border-left: 15px solid #fff;
+        top: 49.1%;
+        right: -1%;
+    }
+    .avone__link {
+        font-size: 13px;
+        line-height: 16px;
+    }
+}
+
+
+
+@media (max-width: 568px) {
+    .avone {
+        margin-bottom: 30px;
+    }
+    .avone__title {
+        margin-bottom: 10px;
+
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .avone__subtitle {
+        margin-bottom: 45px;
+
+        font-size: 15px;
+
+    }
+    .avone-inner {
+        width: 90%;
+    }
+    .avone-inner__img {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .avone-inner__img:nth-child(2) {
+        width: 100%;
+        margin-top: 0;
+    }
+    .avone-inner__img:nth-child(3) {
+        width: 100%;
+        border: none;
+        position: unset;
+    }
+    .avone__link {
+        font-size: 13px;
+        position: unset;
+    }
+    .avone__link::after {
+        content: "";
+        width: 0;
+        height: 1px;
+        background-color: #22262a;
+        position: absolute;
+        bottom: -1px;
+        left: 35.725%;
+        transition: all .3s linear;
+    }
+    .avone__link:hover::after {
+        width: 28.65%;
+    }
+}
+
+
+
+@media (max-width: 414px) {
+    .avone {
+        margin-bottom: 20px;
+    }
+    .avone__title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .avone__title {
+        margin-bottom: 5px;
+    }
+    .avone__subtitle {
+        margin-bottom: 25px;
+
+        font-size: 13px;
+    }
+    .avone-inner {
+        width: 100%;
+    }
+    .avone-inner__img {
+        margin-bottom: 15px;
+    }
+    .avone__link::after {
+        height: 0;
+    }
+}
