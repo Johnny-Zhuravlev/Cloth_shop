@@ -1,7 +1,7 @@
 .header {
     height: 100vh;
 
-    background: url(img/header/header-bg-desktop.jpg) center 82px/cover no-repeat;
+    background: url(../img/header/header-bg-desktop.jpg) center 82px/cover no-repeat;
 
     position: relative;
 }
@@ -359,7 +359,7 @@
 
 @media (max-width: 991px) {
     .header {
-        background: url(img/header/header-bg-tablet.jpg) 55% 76px/cover no-repeat;
+        background: url(../img/header/header-bg-tablet.jpg) 55% 76px/cover no-repeat;
     }
     .header__logo {
         font-size: 26px;
@@ -575,7 +575,7 @@ and (device-width : 540px), (device-width : 600px) {
     .header {
         height: 100vh;
 
-        background: url(img/header/header-bg-tablet.jpg) 58% 66px/cover no-repeat;
+        background: url(../img/header/header-bg-tablet.jpg) 58% 66px/cover no-repeat;
     }
     .header-bottom__inner {
         text-align: center;
@@ -590,7 +590,7 @@ and (max-height : 812px) {
     .header {
         height: 100vh;
 
-        background: url(img/header/header-bg-tablet.jpg) 58% 58px/cover no-repeat;
+        background: url(../img/header/header-bg-tablet.jpg) 58% 58px/cover no-repeat;
     }
     .header-bottom__inner {
         text-align: center;
@@ -608,7 +608,7 @@ and (device-height : 1280px) {
     .header {
         height: 75vh;
 
-        background: url(img/header/header-bg-tablet.jpg) center 58px/cover no-repeat;
+        background: url(../img/header/header-bg-tablet.jpg) center 58px/cover no-repeat;
     }
     .header-bottom__inner {
         text-align: center;
@@ -624,7 +624,7 @@ and (device-height : 1280px) {
 @media only screen
 and (device-height : 1366px) {
     .header {
-        background: url(img/header/header-bg-desktop.jpg) 30% 82px/cover no-repeat;
+        background: url(../img/header/header-bg-desktop.jpg) 30% 82px/cover no-repeat;
     }
     .header-bottom__inner {
         text-align: center;
